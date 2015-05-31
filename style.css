@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'lato';
+}
+
+.img-container {
+  width: 900px;
+  height: 675px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 11.5px;
+  text-align: center;
+  margin:0;
+  padding-top: 40px;
+  opacity: 1;
+  z-index: 200;
+  position: relative;
+
+-webkit-animation: titleAnimation 35s;
+-moz-animation:  titleAnimation 35s;
+-o-animation: titleAnimation 35s;
+animation: titleAnimation 35s;
+
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: none;
+  -webkit-animation: imageAnimation 35s; /* Safari 4+ */
+  -moz-animation:  imageAnimation 35s; /* Fx 5+ */
+  -o-animation: imageAnimation 35s;
+  animation: imageAnimation 35s;
+  opacity: 0;
+}
+
+
+span:nth-of-type(1) {
+  background: url('img/deathvalley1.jpg');
+  background-size: cover;
+}
+
+span:nth-of-type(2) {
+  background: url('img/deathvalley2.jpg');
+  background-size: cover;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+span:nth-of-type(3) {
+  background: url('img/deathvalley5.jpg');
+  background-size: cover;
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+
+span:nth-of-type(4) {
+  background: url('img/deathvalley4.jpg');
+  background-size: cover;
+  -webkit-animation-delay: 21s;
+  animation-delay: 21s;
+
+}
+
+span:nth-of-type(5) {
+  background: url('img/deathvalley6.jpg');
+  background-size: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 28s;
+  animation-delay: 28s;
+}
+
+
+@-webkit-keyframes imageAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1  }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes imageAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1  }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-o-keyframes imageAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1  }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes imageAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1  }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0;}
+}
+
+ @-webkit-keyframes titleAnimation {
+   0%   { opacity: 0; }
+   10%  { opacity: 1 ; }
+   20% { opacity: 1; }
+   30% { opacity: 0; }
+   100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1 ; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1 ; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0 }
+}
+@keyframes titleAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1 ; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0 }
+}
